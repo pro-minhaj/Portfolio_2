@@ -8,25 +8,26 @@ body{
     width: 1180px;
     margin: 0 auto;
 }
+.padding-lr{
+    padding-left: 30px;
+    padding-right: 30px;
+}
 /*Header Star*/
 header{
-    width: 100%;
-    height: 70px;
     background-color: #fff;
     position: fixed;
+    left: 0;
     top: 0;
-    z-index: 1;
-
+    right: 0;
+    z-index: 10;
     
 }
-header div{
+.logo{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
-.logo{
-    margin-left: 60px;
-}
+
 .nav ul{
     display: flex;
     justify-content: center;
@@ -76,10 +77,10 @@ header div{
     
 }
 .heaf{
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .haef1{
     width: 45%;
@@ -87,6 +88,9 @@ header div{
 .haef2{
     width: 45%;
     
+}
+.haef2 img{
+    width: 100%;
 }
 .haef1 h3{
     text-transform: uppercase;
@@ -172,12 +176,11 @@ header div{
 
 /*Section3 Star*/
 .section3{
-    width: 100%;
-    
+   padding-bottom: 100px;
 }
 .services {
     text-align: center;
-    width: 30%;
+    width: 50%;
     margin: 0 auto;
 }
 .services h1{
@@ -188,13 +191,11 @@ header div{
     color: rgba(0, 0, 0, 0.5);
     line-height: 20px;
 }
-.seaviceslist{
-    width: 100%;
 
-}
 .services1{
     display: flex;
     align-items: center;
+    justify-content: center;
     padding-top: 90px;
     gap: 50px;
     flex-wrap: wrap;
@@ -215,7 +216,6 @@ header div{
 }
 .ser1 p{
     color: rgba(0, 0, 0, 0.4);
-    width: 330px;
     line-height: 22px;
 }
 .ser1 i:hover{
@@ -231,10 +231,8 @@ header div{
 
 /*Section4 Star*/
 .section4{
-    width: 100%;
-    height: 250px;
+    
     background-color: #8194FE;
-    margin-top: 120px;
 }
 .number0{
     display: flex;
@@ -271,12 +269,20 @@ header div{
     width: 100%;
     text-align: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap: 50px;
 }
+
 .photo{
     width: 30%;
+}
+.photo-img{
+    width:100% ;
+}
+.photo-img img{
+    width:100% ;
 }
 .photo h1{
     font-size: 20px;
@@ -361,9 +367,17 @@ footer{
 }
 .foot{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     text-align: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.foot1{
+    width: 30%;
+}
+.foot2{
+    width:35% ;
 }
 .foot1 h1{
     color: #fff;
@@ -395,19 +409,24 @@ footer{
 }
 
 
+/* Responvie */
+
+@media (max-width:1180px){
+    .contaner{
+        width: 100%;
+    }
+    
+}
+
 @media (max-width:768px){
     header{
-        width: 100%;
-        height: auto;
         position: fixed;
         top: 0;
-
+        left: 0;
+        right: 0;
+        padding: 20px 0;
     }
-    .logo img{
-        position: fixed;
-        left: 50px;
-        top: 20px;
-    }
+    
     .nav ul{
         position: fixed;
         width: 100%;
@@ -421,9 +440,8 @@ footer{
     }
     .checkbtn{
         display: block;
-        margin-left: 350px;
         cursor: pointer;
-
+        margin: 0;
     }
     .nav ul li{
         position: relative;
@@ -461,31 +479,16 @@ footer{
     .haef1 p{
         margin-top: 20px;
     }
-    .haef2 img{
-        margin-left: 20px;
-        width: 200px;
-        height: 250px;
 
-    }
     .section2{
         position: relative;
         top: 80px;
         width: 100%;
         height: 100vh;
     }
-    .img2 img{
-        width: 500px;
-        height: auto;
-        position: absolute;
-        top: -20px;
-        left: -120px;
-       
+
     }
     .text2{
-        width: 100%;
-        height: auto;
-        position: absolute;
-        top: 350px;
 
     }
 
@@ -545,18 +548,9 @@ footer{
         margin: 0 auto;
        
     }
-    footer{
-        width: 100%;
-        height: auto;
-        
-    }
     .foot{
         display: block;
         
     }
-    .foot1 .p25{
-        width: 80%;
-        margin: auto;
-        margin-top: 20px;
-    }
+
 }
