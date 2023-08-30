@@ -326,6 +326,7 @@ header{
 }
 .card1{
    width: 23%;
+   transition: 0.3s;
 }
 .card1 h3{
     line-height: 0;
@@ -338,6 +339,7 @@ header{
 }
 .card1 h1{
     font-size: 30px;
+    transition: 0.3s;
 }
 .card1 input{
     outline: none;
@@ -347,6 +349,7 @@ header{
     color: #fff;
     font-weight: bold;
     cursor: pointer;
+    transition: 0.5s;
 }
 .card1:hover{
     transform: scale(1.08);
@@ -391,6 +394,7 @@ footer{
     padding: 10px 70px;
     border: none;
     outline: none;
+    margin-bottom: 10px;
 }
 .foot1 button{
     padding: 10px 15px;
